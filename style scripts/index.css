@@ -3,11 +3,14 @@ body {
 }
 p{
   color: orange;
+  font-family: "Lucida Console", "Courier New", monospace;
 }
 h1{
   color: orange;
+  font-family: "Lucida Console", "Courier New", monospace;
 }
 div{
   color: gray;
   border-color: orange;
+  font-family: "Lucida Console", "Courier New", monospace;
 }
