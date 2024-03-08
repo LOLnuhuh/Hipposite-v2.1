@@ -1,0 +1,13 @@
+body {
+  background-color: slategray;
+}
+p{
+  color: orange;
+}
+h1{
+  color: orange;
+}
+div{
+  color: gray;
+  border-color: orange;
+}
