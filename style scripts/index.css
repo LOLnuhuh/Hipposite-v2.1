@@ -13,4 +13,5 @@ div{
   color: gray;
   border-color: orange;
   font-family: "Lucida Console", "Courier New", monospace;
+  border-style: solid;
 }
