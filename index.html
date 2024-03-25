@@ -1,15 +1,26 @@
-<script src=""></script>
-<link rel="stylesheet" href="/style scripts/index.css">
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="/uv/uv.bundle.js"></script>
+        <script src="/uv/uv.config.js"></script>
 
-<div id="tabs">
-  <button><a href="index.html">Proxy</a></button>
-  <button>Games</button>
-</div>
+        <script>
+        if ("serviceWorker" in navigator) {
+            window.addEventListener("load", () => {
+                navigator.serviceWorker.register("/uv/sw.js", {
+                    scope: __uv$config.prefix,
+                });
+            });
+        }
+        </script>
 
-<h1>HippositeV2</h1>
-<p>Unblock the Swamps</p>
+        <link rel="stylesheet" href="example.css">
+    </head>
+    <body>
+        <input type="text" id="urlInput" placeholder="Enter URL here">
+        <button id="searchButton">Search Text</button>
 
-<frorm id="proxy" onsubmit="">
-    <input type="text" id="url" name="url" placeholder="Url">
-    <input type="Go">
-</frorm>
+        <iframe id="iframeWindow" class="iframeWindow"></iframe>
+    </body>
+    <script src="example.js"></script>
+</html>
